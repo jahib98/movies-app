@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import { getMovieDetails } from '../services/movieService';
 import LoadingComponent from '../components/LoadingComponent';
 import ErrorComponent from '../components/ErrorComponent';
@@ -69,10 +68,5 @@ const MovieDetails = () => {
     </div>
   );
 };
-
-// Define the prop types for the component
-MovieDetails.propTypes = {
-  id: PropTypes.string.isRequired
-}
 
 export default MovieDetails
